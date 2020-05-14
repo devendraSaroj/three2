@@ -20,6 +20,9 @@ const state = {
       header: "Sublime App Studio",
       image: image1,
       aspect: 1.51,
+      tech_stack: "Tech stack used - Java, Android, Android Canvas",
+      framework: "",
+      ide: "IDE - Android Studio",
       text: "Worked remotely with the Client based out of Kuala lumpur, Malaysia. The ultimate product featured the fully responsive word game, with levels ranging from easiest to toughest. Being a freemium app it has got the ads of all three types (Banner, Interstitial and Rewarded). App is packed with in app purchase with multiple combinations of coins and ads prevention.",
       link: "https://play.google.com/store/apps/details?id=com.wordgamer.djsde.splashactivity"
     },
@@ -29,6 +32,9 @@ const state = {
       header: "Circles",
       image: image2,
       aspect: 1.5,
+      tech_stack: "Tech stack used - Python, Selenium Web driver",
+      framework: "Framework - Scrapy",
+      ide: "IDE - Pycharm by Jet brains",
       text:
         "A little after the wrapping up of app development work, I got the chance to intern with Ahemdabad based startup called 'Circles'. Being a newbie that I was, getting internship right after the first work was a win-win situation for me. This was the time when I finally got the grasp of python and some other tools like Scrapy and Selenium's webdriver.",
       link: "https://www.circlesway.com/"
@@ -39,8 +45,11 @@ const state = {
       header: "Rathh: Delivery network",
       image: image3,
       aspect: 1.5037,
+      tech_stack: "",
+      framework: "",
+      ide: "UI tools - Figma, JustInMind",
       text:
-        "Until this point the focus was on development only. This is when I first learnt to work with design tools like JustInMind and my favourite one FIGMA. This app is regarding the order management of local works like drycleaning, tailoring etc. I was fortunate enough that everytime I got the work with different exposure. They surely taught me some good skills and working strategy.",
+        "Until this point the focus was on development only. This is when I first learnt to work with design tools like JustInMind and my favourite one FIGMA. This app is regarding the order management of local works like drycleaning, tailoring etc. I was fortunate enough that I got the work with different exposure everytime. They surely taught me some good skills and working strategy.",
       link: "https://play.google.com/store/apps/details?id=com.rathh.app"
       },
     {
@@ -49,6 +58,9 @@ const state = {
       header: "TalkFree",
       image: image4,
       aspect: 1.5,
+      tech_stack: "Tech stack used - Dart",
+      framework: "Framework - Flutter",
+      ide: "IDE - VS code",
       text:
         "I was excited to develop the UI for chat app. At the time flutter was getting the popularity for offering a feature packed and cross-plateform service. The knowledge of figma from previous internship helped me to create the UI mockups. And the final development started with flutter, it surely had some hurdles but not as much as I faced while learning the android.",
       link: "https://github.com/devendraSaroj/TalkFree"
@@ -59,6 +71,9 @@ const state = {
       header: "Archive Mail",
       image: image5,
       aspect: 1.55,
+      tech_stack: "Tech stack used - HTML, CSS, Javascript",
+      framework: "Library - ReactJS",
+      ide: "IDE - VS code",
       text:
         "This project taught me the ReactJS at it's best. From writing minimal HTML to reusable components, setting up a react router to managing the state with react hooks and many more. Started with react with this project and Ended up coding this portfolio in react.",
       link: ""
@@ -69,6 +84,9 @@ const state = {
       header: "The Portfolio", 
       image: image6, 
       aspect: 1.77, 
+      tech_stack: "Tech stack used - HTML, CSS, Javascript",
+      framework: "Library - ReactJS, ThreeJS, GSAP",
+      ide: "IDE - VS code",
       text: "The portfolio says a lot. But when you're a frontend developer, you must make it scream. " ,
       link: ""
     }

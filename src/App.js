@@ -10,6 +10,7 @@ import {Text, MultilineText} from "./components/Text"
 import Plane from "./components/Plane"
 import Diamond from "./diamonds/Diamond"
 import resume from './media/Devendra_Saroj_Resume.pdf'
+import './index.js'
 
 function Startup() {
   const ref = useRef()
@@ -17,7 +18,7 @@ function Startup() {
   return <Plane ref={ref} color="#0e0e0f" position={[0, 0, 200]} scale={[100, 100, 1]} />
 }
 
-function Paragraph({ image, index, offset, factor, header, aspect, text }) {
+function Paragraph({ image, index, offset, factor, header, aspect, text, tech_stack, framework, ide }) {
   const { contentMaxWidth: w, canvasWidth, margin, mobile } = useBlock()
   const size = aspect < 1 && !mobile ? 0.65 : 1
   const alignRight = (canvasWidth - w * size - margin) / 2
@@ -31,6 +32,9 @@ function Paragraph({ image, index, offset, factor, header, aspect, text }) {
         <Dom
           style={{ width: pixelWidth / (mobile ? 1 : 2), textAlign: left ? "left" : "right" }}
           position={[left || mobile ? (-w * size) / 2 : 0, (-w * size) / 2 / aspect - 0.4, 1]}>
+          {tech_stack}{tech_stack ? <br />: ""}
+          {framework} {framework ? <br />: ""}
+          {ide} {ide ? <br />: ""} <br />
           {text} 
         </Dom>
         <Text left={left} right={!left} size={w * 0.04} color={color} top position={[((left ? -w : w) * size) / 2, (w * size) / aspect / 2 + 0.5, -1]}>
@@ -90,8 +94,8 @@ function Content() {
         <Block factor={1.25}>
           <MultilineText top left size={w * 0.08} lineHeight={w / 7} position={[-w / 3.0, -0.2, -1]} color="#2fe8c3" text={"Fir\nmilenge"} />
         </Block>
-        <Dom className="bottom-left" position={[mobile ? (-w / 2.5) : (-w / 3.5), -canvasHeight / 1.9, 0]}>
-          <p className="copyright">
+        <Dom className="bottom-left" position={[mobile ? (-w / 1.8) : (-w / 3.5), -canvasHeight / 1.9, 0]}>
+          <p className="copyright_home">
             All rights reserved - 2020 <i className="far fa-copyright"></i> devendra saroj.
           </p>
         </Dom>
@@ -123,26 +127,28 @@ function App() {
         ))}
       </div>
       <div className="frame">
-        <a className="frame__title" href="/index.html">
+        <a className="frame__title" href="./index">
           Devendra Saroj
         </a>
         <div className="frame__links">
           <a className="frame__link" href="#" onClick={showAboutSection}> About </a>
           <a className="frame__link" target="_blank" rel="noopener noreferrer" href={resume}> Resume </a>
+          <a className="frame__link" target="_blank" rel="noopener noreferrer" href="mailto:devendrasaroj97@gmail.com" children="Mail" />
           <a className="frame__link" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/devendra-saroj-78187b111/"> LinkedIn </a>
           <a className="frame__link" target="_blank" rel="noopener noreferrer" href="https://github.com/devendraSaroj"> GitHub </a>
+
           {/* <a className="frmae__link" target="_blank" rel="noopener noreferrer">Resume<iframe src="https://drive.google.com/file/d/1BKVc0iN_VRCrJ4AMRaQN1B-z0wCbcfQD/view?usp=sharing"></iframe></a> */}
         </div>
-        <div className="frame__nav">
-          <a className="frame__link" href="mailto:connect@devendrasaroj.tech" children="connect@devendrasaroj.tech" />
-        </div>
+        {/* <div className="frame__nav">
+          <a className="frame__link" target="_blank" rel="noopener noreferrer" href="mailto:devendrasaroj97@gmail.com" children="Drop a Mail" />
+        </div> */}
         <div className="frame__nav__right">
           <a className="frame__link" target="_blank" rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=com.wordgamer.djsde.splashactivity" children="01" />
           <a className="frame__link" target="_blank" rel="noopener noreferrer" href="https://www.circlesway.com/" children="02" />
           <a className="frame__link" target="_blank" rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=com.rathh.app" children="03" />
           <a className="frame__link" target="_blank" rel="noopener noreferrer" href="https://github.com/devendraSaroj/TalkFree" children="04" />
           <a className="frame__link" target="_blank" rel="noopener noreferrer" href="https://devendrasaroj.github.io/hennge/" children="05" />
-          <a className="frame__link" target="_blank" rel="noopener noreferrer" href="https://devendrasaroj.tech" children="06" />
+          <a className="frame__link" target="_blank" rel="noopener noreferrer" href="./index" children="06" />
         </div>
       </div>
       <section className="about-container" id="about_section">
@@ -174,7 +180,7 @@ function App() {
                 <p>In order to introduce myself, it seems to me more sensible to skip the classical entry through which I present
                     my academic as well as professional career.
                 </p>
-                <p>A "Need For Speed" fanatic, my friend had no choice but to cruelly uninstall it from his system. Yes, I used to play on his system as my lappy 
+                <p>A "Need For Speed" fanatic, my friend had no choice but to cruelly uninstall it from his system. Yep! I used to play on his system as my lappy 
                     lacked the specs then. After that I had no choice but to propell me to a new hobby, the surfing over Web technologies.
                 </p>
                 <p>So it was by being deprived of an entertainment that I discovered another one - that quickly turned into a 
@@ -184,7 +190,7 @@ function App() {
                     that I cultivate tirelessly in my spare time.</p>
                 <p className="copyright">
                     All rights reserved - 2020 <i className="far fa-copyright"></i> devendra saroj.
-                    <span className="code">Code by <a className="underline" href="/index.html">Devendra Saroj</a></span>
+                    <span className="code">Code by <a className="underline" href="./index">Devendra Saroj</a></span>
                 </p>
             </div>
         </div>

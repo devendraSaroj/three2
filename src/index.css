@@ -138,13 +138,18 @@ a:focus {
   margin-bottom: 1.5rem;
 }
 
-.month_wise li p {
 
-}
+
 
 .detail {
   font-size: 1rem;
   margin-bottom: 2rem;
+  /* margin-top: 5rem; */
+
+}
+
+.detail p:not(:first-child) {
+  margin-top: 1rem;
 }
 
 .code {
@@ -160,6 +165,27 @@ a:focus {
   margin-top: 2rem;
   text-decoration: underline;
   pointer-events: visible;
+}
+
+
+.copyright {
+  margin-top: 2rem;
+  font-size: 0.7rem;
+}
+
+.copyright_home {
+  font-size: 0.7rem;
+}
+
+
+@media screen and (max-width:53em) {
+    .month_wise {
+      display: none;
+    }
+
+    .detail {
+      margin-top: 5rem;
+    }
 }
 
 
