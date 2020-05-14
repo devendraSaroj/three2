@@ -17,7 +17,7 @@
     "three": "^0.115.0",
     "typescript": "^3.9.2"
   },
-  "homepage": "https://devendrasaroj.github.io/three1",
+  "homepage": "https://devendrasaroj.github.io/three2",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
