@@ -9,6 +9,7 @@ import "./components/CustomMaterial.js"
 import {Text, MultilineText} from "./components/Text"
 import Plane from "./components/Plane"
 import Diamond from "./diamonds/Diamond"
+import resume from './media/Devendra_Saroj_Resume.pdf'
 
 function Startup() {
   const ref = useRef()
@@ -127,7 +128,7 @@ function App() {
         </a>
         <div className="frame__links">
           <a className="frame__link" href="#" onClick={showAboutSection}> About </a>
-          <a className="frame__link" target="_blank" rel="noopener noreferrer" href="/Devendra_Saroj_Resume.pdf"> Resume </a>
+          <a className="frame__link" target="_blank" rel="noopener noreferrer" href={resume}> Resume </a>
           <a className="frame__link" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/devendra-saroj-78187b111/"> LinkedIn </a>
           <a className="frame__link" target="_blank" rel="noopener noreferrer" href="https://github.com/devendraSaroj"> GitHub </a>
           {/* <a className="frmae__link" target="_blank" rel="noopener noreferrer">Resume<iframe src="https://drive.google.com/file/d/1BKVc0iN_VRCrJ4AMRaQN1B-z0wCbcfQD/view?usp=sharing"></iframe></a> */}

@@ -4,8 +4,9 @@ import { useLoader, useFrame } from "react-three-fiber"
 import usePromise from "react-promise-suspense"
 import lerp from "lerp"
 import state from "../Store"
+import font_moonget from '../media/MOONGET_Heavy.blob'
 
-function Text({ children, size = 1, left, right, top, bottom, color = "white", opacity = 1, height = 0.01, layers = 0, font = "/MOONGET_Heavy.blob", ...props }) {
+function Text({ children, size = 1, left, right, top, bottom, color = "white", opacity = 1, height = 0.01, layers = 0, font = font_moonget, ...props }) {
   const data = useLoader(FontLoader, font)
   const geom = usePromise(() => new Promise(res => res(new TextBufferGeometry(children, { font: data, size: 1, height, curveSegments: 32 }))), [children])
   // const geom = new TextBufferGeometry(children, { font: data, size: 1, height, curveSegments: 32 })

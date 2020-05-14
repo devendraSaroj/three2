@@ -1,5 +1,12 @@
 import { createRef } from "react"
 import { Vector3 } from "three"
+import image1 from './media/wordgamer.png'
+import image2 from './media/circles.png'
+import image3 from './media/rathh.png'
+import image4 from './media/talkfree.png'
+import image5 from './media/mail_archive.png'
+import image6 from './media/portfolio.png'
+
 
 
 const state = {
@@ -11,7 +18,7 @@ const state = {
       offset: 1,
       factor: 1.75,
       header: "Sublime App Studio",
-      image: "/wordgamer.png",
+      image: image1,
       aspect: 1.51,
       text: "Worked remotely with the Client based out of Kuala lumpur, Malaysia. The ultimate product featured the fully responsive word game, with levels ranging from easiest to toughest. Being a freemium app it has got the ads of all three types (Banner, Interstitial and Rewarded). App is packed with in app purchase with multiple combinations of coins and ads prevention.",
       link: "https://play.google.com/store/apps/details?id=com.wordgamer.djsde.splashactivity"
@@ -20,7 +27,7 @@ const state = {
       offset: 2,
       factor: 2.0,
       header: "Circles",
-      image: "/circles.png",
+      image: image2,
       aspect: 1.5,
       text:
         "A little after the wrapping up of app development work, I got the chance to intern with Ahemdabad based startup called 'Circles'. Being a newbie that I was, getting internship right after the first work was a win-win situation for me. This was the time when I finally got the grasp of python and some other tools like Scrapy and Selenium's webdriver.",
@@ -30,7 +37,7 @@ const state = {
       offset: 3,
       factor: 2.25,
       header: "Rathh: Delivery network",
-      image: "/rathh.png",
+      image: image3,
       aspect: 1.5037,
       text:
         "Until this point the focus was on development only. This is when I first learnt to work with design tools like JustInMind and my favourite one FIGMA. This app is regarding the order management of local works like drycleaning, tailoring etc. I was fortunate enough that everytime I got the work with different exposure. They surely taught me some good skills and working strategy.",
@@ -40,7 +47,7 @@ const state = {
       offset: 4,
       factor: 2.0,
       header: "TalkFree",
-      image: "/talkfree.png",
+      image: image4,
       aspect: 1.5,
       text:
         "I was excited to develop the UI for chat app. At the time flutter was getting the popularity for offering a feature packed and cross-plateform service. The knowledge of figma from previous internship helped me to create the UI mockups. And the final development started with flutter, it surely had some hurdles but not as much as I faced while learning the android.",
@@ -50,7 +57,7 @@ const state = {
       offset: 5,
       factor: 1.75,
       header: "Archive Mail",
-      image: "/mail_archive.png",
+      image: image5,
       aspect: 1.55,
       text:
         "This project taught me the ReactJS at it's best. From writing minimal HTML to reusable components, setting up a react router to managing the state with react hooks and many more. Started with react with this project and Ended up coding this portfolio in react.",
@@ -60,7 +67,7 @@ const state = {
       offset: 7, 
       factor: 1.05, 
       header: "The Portfolio", 
-      image: "/portfolio.png", 
+      image: image6, 
       aspect: 1.77, 
       text: "The portfolio says a lot. But when you're a frontend developer, you must make it scream. " ,
       link: ""
