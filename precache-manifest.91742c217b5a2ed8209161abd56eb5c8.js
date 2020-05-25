@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "96dbd2232a4bc4acf453fd0ee01c0b44",
+    "revision": "8ab545bb9e83cbdcd595cbc27412972e",
     "url": "/index.html"
   },
   {
-    "revision": "c1c8e2085b2f7835f474",
+    "revision": "55794304f4afd0156f23",
     "url": "/static/css/main.b0192712.chunk.css"
   },
   {
@@ -16,16 +16,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.6f1a4538.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c1c8e2085b2f7835f474",
-    "url": "/static/js/main.05aeaa9e.chunk.js"
+    "revision": "55794304f4afd0156f23",
+    "url": "/static/js/main.af238f53.chunk.js"
   },
   {
     "revision": "b775e3132e0930477ff9",
     "url": "/static/js/runtime-main.17a0efde.js"
   },
   {
-    "revision": "7b5d98e510324d6c7e55116268a2f7dc",
-    "url": "/static/media/Devendra_Saroj_Resume.7b5d98e5.pdf"
+    "revision": "befbd19e97ef974ee25090f01feb8046",
+    "url": "/static/media/Devendra_Saroj_Resume.befbd19e.pdf"
   },
   {
     "revision": "8432a4487990a8dcb685d44bc95013dc",
